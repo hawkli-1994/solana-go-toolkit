@@ -1,13 +1,13 @@
-package datetime
+package time
 
 import (
 	"context"
-	"time"
+	gotime "time"
 
 	"github.com/gagliardetto/solana-go/rpc"
 )
 
-func Now(client *rpc.Client) (*time.Time, error) {
+func Now(client *rpc.Client) (*gotime.Time, error) {
 	blockInfo, err := client.GetLatestBlockhash(context.Background(), rpc.CommitmentFinalized)
 	if err != nil {
 		return nil, err
