@@ -2,7 +2,7 @@ module github.com/hawkli-1994/solana-go-toolkit
 
 go 1.23.3
 
-require github.com/gagliardetto/solana-go v1.12.0
+require github.com/gagliardetto/solana-go/v2 v2.0.0
 
 require (
 	filippo.io/edwards25519 v1.0.0-rc.1 // indirect
